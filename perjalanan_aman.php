@@ -18,7 +18,7 @@ class Perjalanan extends Admin_Controller
         $this->data['title'] = 'Perjalanan';
         $this->load->view('rdpl/perjalanan/index', $this->data);
     }
-
+    
     public function testing()
     {
         $this->data['title'] = 'Perjalanan Untuk Testing';
@@ -71,7 +71,7 @@ class Perjalanan extends Admin_Controller
             }
         }
     }
-
+    
     public function jam_testing()
     {
         $now = date('Hi');
@@ -220,7 +220,7 @@ class Perjalanan extends Admin_Controller
             }
         }
     }
-
+    
     public function jam2_testing()
     {
         $now = date('Hi');
@@ -305,7 +305,7 @@ class Perjalanan extends Admin_Controller
             }
         }
     }
-
+    
     public function rute_testing()
     {
         $asal = $_GET["asal"];
@@ -798,7 +798,7 @@ class Perjalanan extends Admin_Controller
             redirect('rdpl/perjalanan', 'refresh');
         }
     }
-
+    
     public function pilih_kursi_testing()
     {
         // var_dump($this->input->post());
@@ -1113,7 +1113,7 @@ class Perjalanan extends Admin_Controller
         $this->output->set_content_type('application/json');
         echo json_encode($json);
     }
-
+    
     public function checkticket_testing()
     {
         $json = array();
@@ -1380,7 +1380,7 @@ class Perjalanan extends Admin_Controller
         $this->data['title'] = 'Data Perjalanan Anda';
         $this->load->view('rdpl/perjalanan/booking', $this->data);
     }
-
+    
     public function booking_testing()
     {
         // if ($this->session->userdata('id') == 57 || $this->session->userdata('id') == '57') {
@@ -1471,7 +1471,7 @@ class Perjalanan extends Admin_Controller
         $this->output->set_content_type('application/json');
         echo json_encode($json);
     }
-
+    
     public function selesai_testing()
     {
         $json = array();
@@ -1712,7 +1712,7 @@ class Perjalanan extends Admin_Controller
         $this->output->set_content_type('application/json');
         echo json_encode($json);
     }
-
+    
     public function goticket_testing()
     {
         $json = array();
@@ -1914,7 +1914,7 @@ class Perjalanan extends Admin_Controller
         $this->data['title'] = 'Data Perjalanan Anda';
         $this->load->view('rdpl/perjalanan/sms', $this->data);
     }
-
+    
     public function sms_testing()
     {
         $this->data['title'] = 'Data Perjalanan Anda';
@@ -1984,7 +1984,7 @@ Terima kasih. :)
                 curl_close($curl);
         redirect('rdpl/perjalanan', 'refresh');
     }
-
+    
     public function gowa_testing()
     {
         $booking = $this->session->userdata('booking');
